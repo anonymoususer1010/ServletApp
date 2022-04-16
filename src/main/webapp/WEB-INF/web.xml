@@ -1,0 +1,59 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>MainController</servlet-name>
+        <servlet-class>controller.MainController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainController</servlet-name>
+        <url-pattern>/BucketList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addList</servlet-name>
+        <servlet-class>controller.AddList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addList</servlet-name>
+        <url-pattern>/addList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editList</servlet-name>
+        <servlet-class>controller.EditList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editList</servlet-name>
+        <url-pattern>/editList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>viewList</servlet-name>
+        <servlet-class>controller.ViewList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>viewList</servlet-name>
+        <url-pattern>/viewList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteList</servlet-name>
+        <servlet-class>controller.DeleteList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteList</servlet-name>
+        <url-pattern>/deleteList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+        <load-on-startup>0</load-on-startup>  
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
